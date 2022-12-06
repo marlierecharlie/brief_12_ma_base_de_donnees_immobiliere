@@ -1,0 +1,46 @@
+Numéro,Code propriété,Signiﬁcation,Type,Observation
+1,Code service CH,Données non restituées,,
+2,Reference document,,,
+3,1 Articles CGI,,,
+4,2 Articles CGI,,,
+5,3 Articles CGI,,,
+6,4 Articles CGI,,,
+7,5 Articles CGI,,,
+8,No disposition,Numéro d’id d’une mutation d’un acte,Integer,table mutation
+9,Date mutation,Date de signature de l’acte,Date YYYY-MM-DD H:M:S,"Format : 2020-01-27 00:00:00 , table mutation"
+10,Nature mutation,"Vente, vente en l’état futur d’achèvement, vente de terrain à bâtir, adjudication, expropriation ou échange",Text,table mutation
+11,Valeur foncière,Montant ou évaluation déclaré(e) dans le cadre d’une mutation à titre onéreux.,Integer,table mutation
+12,No voie,Numéro dans la voie,Integer,adresse logement
+13,B/T/Q,Indice de répétition,Text,table mutation
+14,Code type de voie,,Text,table adresse logement
+15,Type de voie,"Exemple : Rue, avenue, etc.",Integer,table adresse logement
+16,Code voie,Code Rivoli,Text,table adresse logement
+17,Voie,Libellé de la voie,Float,Varchar(5)
+18,Code ID commune,,Text,"table adresse commune, clé primaire"
+19,Code postal,,Integer,table adresse commune
+20,Commune,Libellé de la commune,Integer,table adresse commune
+21,Code departement,Référence cadastrale de la parcelle,Integer,table adresse commune
+22,Code commune,,Text,table adresse commune
+23,N° de plan,,Integer,table adresse commune
+24,Section,,Integer,"table adresse commune, clé étrangère de la table lot"
+25,No plan,,Interger et text,"table adresse commune, clé étrangère de la table lot"
+26,Code propriété,,Float,
+27,1er lot,"Un lot de copropriété est constitué d’une partie privative et d’une quote-part de partie commune. Seuls les 5 premiers lots sont mentionnés. Si le nombre de lots est supérieur à 5, ils ne sont pas restitués.",Integer,table lot
+28,Surface Carrez du 1er lot,,Float,table lot
+29,2eme lot,,,
+30,Surface Carrez du 2eme lot,,,
+31,3eme lot,,,
+32,Surface Carrez du 3eme lot,,,
+33,4eme lot,,,
+34,Surface Carrez du 4eme lot,,,
+35,5eme lot,,,
+36,Surface Carrez du 5eme lot,,,3 : dépendance (isolée)
+37,Nombre de lots,Nombre total de lots par disposition.,interger ,table lot
+38,Code type local,1 : maison ; 2 : appartement ; 3 : dépendance (isolée) ; 4 : local industriel et commercial ou assimilés,interger ,
+39,Type local,,text,
+40,Identifiant local,Donnée non restituée,Integer,
+41,Surface reelle bati,,float,
+42,Nombre pieces principales,,interger ,
+43,Nature culture,,text,
+44,Nature culture speciale,,,
+45,surface du terrain,,float,
